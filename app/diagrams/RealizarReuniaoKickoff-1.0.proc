@@ -80,11 +80,11 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_wMFSYQfJEe6vzMw2PyiCFQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_wMFSYgfJEe6vzMw2PyiCFQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_xgrGwwfJEe6vzMw2PyiCFQ" target="_6RjtkAfJEe6vzMw2PyiCFQ" source="_wuhREAfJEe6vzMw2PyiCFQ">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_xgrGwwfJEe6vzMw2PyiCFQ" name="Não" target="_6RjtkAfJEe6vzMw2PyiCFQ" source="_wuhREAfJEe6vzMw2PyiCFQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_xgrGxAfJEe6vzMw2PyiCFQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_xgrGxQfJEe6vzMw2PyiCFQ" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_AFGZgAfKEe6vzMw2PyiCFQ" target="_MMZigAfKEe6vzMw2PyiCFQ" source="_wuhREAfJEe6vzMw2PyiCFQ" isDefault="true">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_AFGZgAfKEe6vzMw2PyiCFQ" name="SIm" target="_MMZigAfKEe6vzMw2PyiCFQ" source="_wuhREAfJEe6vzMw2PyiCFQ" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_AFGZgQfKEe6vzMw2PyiCFQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_AFGZggfKEe6vzMw2PyiCFQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
@@ -207,7 +207,7 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_xgrt0AfJEe6vzMw2PyiCFQ" type="4001" element="_xgrGwwfJEe6vzMw2PyiCFQ" source="_wuhRFAfJEe6vzMw2PyiCFQ" target="_6RjtnQfJEe6vzMw2PyiCFQ" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_xgrt0wfJEe6vzMw2PyiCFQ" type="6001">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_xgrt1AfJEe6vzMw2PyiCFQ" y="-10"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xgrt1AfJEe6vzMw2PyiCFQ" x="-1" y="-23"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_xgrt0QfJEe6vzMw2PyiCFQ" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xgrt0gfJEe6vzMw2PyiCFQ" points="[0, 22, -219, -81]$[0, 78, -219, -25]$[169, 78, -50, -25]"/>
