@@ -8,21 +8,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_BfYylQeQEe67Ytr_dXcSYQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_BfYylgeQEe67Ytr_dXcSYQ" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_BfYylweQEe67Ytr_dXcSYQ" name="Identificar Gestor de Projeto" outgoing="_Lo4yIAeQEe67Ytr_dXcSYQ" incoming="_BfYyqAeQEe67Ytr_dXcSYQ" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_BfYymAeQEe67Ytr_dXcSYQ" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_BfYymQeQEe67Ytr_dXcSYQ" name="" content="" returnTypeFixed="true"/>
-          <stepSummary xmi:type="expression:Expression" xmi:id="_BfYymgeQEe67Ytr_dXcSYQ" name="" content="" returnTypeFixed="true"/>
-          <loopCondition xmi:type="expression:Expression" xmi:id="_BfYymweQEe67Ytr_dXcSYQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <loopMaximum xmi:type="expression:Expression" xmi:id="_BfYynAeQEe67Ytr_dXcSYQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-          <cardinalityExpression xmi:type="expression:Expression" xmi:id="_BfYynQeQEe67Ytr_dXcSYQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-          <iteratorExpression xmi:type="expression:Expression" xmi:id="_BfYyngeQEe67Ytr_dXcSYQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
-          <completionCondition xmi:type="expression:Expression" xmi:id="_BfYynweQEe67Ytr_dXcSYQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_BfYyoAeQEe67Ytr_dXcSYQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_BfYyoQeQEe67Ytr_dXcSYQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
-          </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_BfYyogeQEe67Ytr_dXcSYQ"/>
-          <expectedDuration xmi:type="expression:Expression" xmi:id="_BfYyoweQEe67Ytr_dXcSYQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
-        </elements>
+        <elements xmi:type="process:Task" xmi:id="_BfYylweQEe67Ytr_dXcSYQ" name="Identificar Gestor de Projeto" outgoing="_Lo4yIAeQEe67Ytr_dXcSYQ" incoming="_BfYyqAeQEe67Ytr_dXcSYQ" overrideActorsOfTheLane="false"/>
         <elements xmi:type="process:EndEvent" xmi:id="_FFIUwAeREe67Ytr_dXcSYQ" name="Fim do Projeto" incoming="_FFJi4AeREe67Ytr_dXcSYQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_FFI70QeREe67Ytr_dXcSYQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_FFI70AeREe67Ytr_dXcSYQ" name="" content="" returnTypeFixed="true"/>
@@ -267,7 +253,6 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_BfYyyweQEe67Ytr_dXcSYQ" type="7002">
             <children xmi:type="notation:Shape" xmi:id="_BfYyzAeQEe67Ytr_dXcSYQ" type="3005" element="_BfYylweQEe67Ytr_dXcSYQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_BfYyzQeQEe67Ytr_dXcSYQ" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BfYyzgeQEe67Ytr_dXcSYQ" x="160" y="100" width="120" height="60"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_BfYyzweQEe67Ytr_dXcSYQ" type="3002" element="_BfYykweQEe67Ytr_dXcSYQ" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_BfYy0AeQEe67Ytr_dXcSYQ" type="5024">
