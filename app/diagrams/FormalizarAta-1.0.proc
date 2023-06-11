@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_0F9RgAfKEe6vzMw2PyiCFQ" name="FormalizarAta" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_0F9RgQfKEe6vzMw2PyiCFQ" name="Formalizar Ata">
       <elements xmi:type="process:Lane" xmi:id="_0F9RggfKEe6vzMw2PyiCFQ" name="Empregado que chamou" actor="_0F9RmwfKEe6vzMw2PyiCFQ">
@@ -18,7 +18,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_0F9RjgfKEe6vzMw2PyiCFQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_0F9RjwfKEe6vzMw2PyiCFQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_0F9RkAfKEe6vzMw2PyiCFQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_0F9RkQfKEe6vzMw2PyiCFQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_YCFRcAhWEe67W9WUzSly5A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_0F9RkgfKEe6vzMw2PyiCFQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_0F9RkwfKEe6vzMw2PyiCFQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -37,6 +37,17 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_g0ziMgfQEe6vzMw2PyiCFQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_g0ziMQfQEe6vzMw2PyiCFQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_g0ziMwfQEe6vzMw2PyiCFQ" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_nx7D4ghVEe67W9WUzSly5A">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_nx7D4whVEe67W9WUzSly5A" name="ata" content="ata" type="TYPE_VARIABLE" returnType="com.estg.model.Ata">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_nx7D5AhVEe67W9WUzSly5A" name="ata" dataType="_0F9RtAfKEe6vzMw2PyiCFQ" className="com.estg.model.Ata"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_nx7D5QhVEe67W9WUzSly5A" name="ataInput.ataAceite" content="ataInput?.ataAceite" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_nx7D5ghVEe67W9WUzSly5A" name="ataInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_nx7D5whVEe67W9WUzSly5A" type="JAVA_METHOD" expression="setAtaAceite">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_g0ziNAfQEe6vzMw2PyiCFQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_g0ziNQfQEe6vzMw2PyiCFQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_g0ziNgfQEe6vzMw2PyiCFQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -46,9 +57,13 @@
             <condition xmi:type="expression:Expression" xmi:id="_YT66sAfaEe6vzMw2PyiCFQ" name="7 Days 00:00:00" content="432000000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_Q2ITegfaEe6vzMw2PyiCFQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_Q2ITewfaEe6vzMw2PyiCFQ" name="ReceberRespostaAta" content="0bf6e824-db05-4e1d-b44b-71466ee9609d" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_D78poAhWEe67W9WUzSly5A" name="aceitarAta" content="34fc6f64-e7a2-48f9-bf62-c5d12db0d241" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_Q2ITeQfaEe6vzMw2PyiCFQ"/>
+          <contract xmi:type="process:Contract" xmi:id="_Q2ITeQfaEe6vzMw2PyiCFQ">
+            <inputs xmi:type="process:ContractInput" xmi:id="_nx7D4AhVEe67W9WUzSly5A" name="ataInput" type="COMPLEX" dataReference="ata" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_nx7D4QhVEe67W9WUzSly5A" name="ataAceite" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Q2ITfAfaEe6vzMw2PyiCFQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_uv28QAfaEe6vzMw2PyiCFQ" name="A ata foi aceite?" outgoing="_4rraRAfcEe6vzMw2PyiCFQ _8RfqaAfcEe6vzMw2PyiCFQ" incoming="_uagXUgfaEe6vzMw2PyiCFQ">
@@ -72,11 +87,11 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_IoNIYwfdEe6vzMw2PyiCFQ" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <data xmi:type="process:Data" xmi:id="_tiKdQAfeEe6vzMw2PyiCFQ" name="ataAceite" dataType="_0F9RrAfKEe6vzMw2PyiCFQ">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_tiKdQQfeEe6vzMw2PyiCFQ" name="false" content="false" returnType="java.lang.Boolean"/>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_QQh2IAhVEe67W9WUzSly5A" name="ata" dataType="_0F9RtAfKEe6vzMw2PyiCFQ" className="com.estg.model.Ata">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_QQh2IQhVEe67W9WUzSly5A" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_0F9RlAfKEe6vzMw2PyiCFQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_0F9RlQfKEe6vzMw2PyiCFQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_YCFRcQhWEe67W9WUzSly5A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_0F9RlgfKEe6vzMw2PyiCFQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_0F9RlwfKEe6vzMw2PyiCFQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -99,7 +114,9 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_4rraRAfcEe6vzMw2PyiCFQ" name="Sim" target="_4rqzMAfcEe6vzMw2PyiCFQ" source="_uv28QAfaEe6vzMw2PyiCFQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_4rraRQfcEe6vzMw2PyiCFQ"/>
-        <condition xmi:type="expression:Expression" xmi:id="_4rraRgfcEe6vzMw2PyiCFQ" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_4rraRgfcEe6vzMw2PyiCFQ" name="ataAceite()" content="ata.ataAceite" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_3czBUAhVEe67W9WUzSly5A" name="ata" dataType="_0F9RtAfKEe6vzMw2PyiCFQ" className="com.estg.model.Ata"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8RfqaAfcEe6vzMw2PyiCFQ" name="Não" target="_8RfqYAfcEe6vzMw2PyiCFQ" source="_uv28QAfaEe6vzMw2PyiCFQ" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8RfqaQfcEe6vzMw2PyiCFQ"/>
@@ -110,6 +127,25 @@
         <condition xmi:type="expression:Expression" xmi:id="_IoNvcQfdEe6vzMw2PyiCFQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_0F9RmwfKEe6vzMw2PyiCFQ" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_OcWGQAhWEe67W9WUzSly5A" name="Production" version="7.12.0-004" username="walter.bates">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_OcWGRghWEe67W9WUzSly5A">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_OcWGRwhWEe67W9WUzSly5A" name="Employee actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="_OcWGSAhWEe67W9WUzSly5A">
+              <group>/acme</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_OcWGSQhWEe67W9WUzSly5A"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_OcWGSghWEe67W9WUzSly5A">
+              <role>member</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_OcWGSwhWEe67W9WUzSly5A"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_OcWGQQhWEe67W9WUzSly5A" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_OcWGQghWEe67W9WUzSly5A" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_OcWGQwhWEe67W9WUzSly5A" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_OcWGRAhWEe67W9WUzSly5A" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_OcWGRQhWEe67W9WUzSly5A" id="GROOVY_SCRIPT"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_0F9RnAfKEe6vzMw2PyiCFQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_0F9RnQfKEe6vzMw2PyiCFQ">
         <name xmi:type="expression:Expression" xmi:id="_0F9RngfKEe6vzMw2PyiCFQ" content="" returnTypeFixed="true"/>
