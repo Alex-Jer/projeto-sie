@@ -27,6 +27,18 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.estg.model.Projeto">
+            <fields>
+                <field type="BOOLEAN" length="255" name="projetoDividido" nullable="true" collection="false">
+                    <description>Int:&#13;
+0 - dividido em subprojetos&#13;
+1 - não dividido</description>
+                </field>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.estg.model.Requisito">
             <fields>
                 <field type="BOOLEAN" length="255" name="problemasDetetados" nullable="true" collection="false"/>
