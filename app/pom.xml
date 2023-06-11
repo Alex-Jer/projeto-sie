@@ -84,6 +84,12 @@
       <artifactId>bonita-actorfilter-user-manager</artifactId>
       <version>1.0.0</version>
     </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>projetosie-bdm-model</artifactId>
+      <version>${project.version}</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
