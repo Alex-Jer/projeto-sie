@@ -11,6 +11,14 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.estg.model.Paremetrizacao">
+            <fields>
+                <field type="BOOLEAN" length="255" name="saidasOK" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.estg.model.Requisito">
             <fields>
                 <field type="BOOLEAN" length="255" name="problemasDetetados" nullable="true" collection="false"/>
