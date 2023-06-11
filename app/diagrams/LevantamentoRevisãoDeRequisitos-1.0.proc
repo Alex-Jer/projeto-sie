@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_EvotoAfYEe6wE63b9ytpBw" name="LevantamentoRevisãoDeRequisitos" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_EvotoQfYEe6wE63b9ytpBw" name="Levantamento e revisão de requisitos">
-      <elements xmi:type="process:Lane" xmi:id="_EvotogfYEe6wE63b9ytpBw" name="Gestor do Projeto e Gestor de Implementação" actor="_EvotuwfYEe6wE63b9ytpBw">
+      <elements xmi:type="process:Lane" xmi:id="_EvotogfYEe6wE63b9ytpBw" name="Gestor do Projeto e Gestor de Implementação" actor="_6kP5QAg7Ee66dZ1LZhmv1g">
         <elements xmi:type="process:StartEvent" xmi:id="_EvotowfYEe6wE63b9ytpBw" name="Início do levantamento" outgoing="_EvotuAfYEe6wE63b9ytpBw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_EvotpAfYEe6wE63b9ytpBw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_EvotpQfYEe6wE63b9ytpBw" name="" content="" returnTypeFixed="true"/>
@@ -24,9 +24,6 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_DBek4AfnEe6wE63b9ytpBw" name="requisitosInput" type="COMPLEX" dataReference="requisitos" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_DBfL8AfnEe6wE63b9ytpBw" name="problemasDetetados" type="BOOLEAN" createMode="false"/>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_DBfL8QfnEe6wE63b9ytpBw" expression="requisitosInput?.problemasDetetados != null" errorMessage="problemasDetetados is mandatory for Requisito" name="mandatory_requisitosInput_problemasDetetados">
-              <inputNames>requisitosInput</inputNames>
-            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_EvotswfYEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -93,15 +90,33 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_OGMX4gfZEe6wE63b9ytpBw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_OGMX4QfZEe6wE63b9ytpBw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_OGMX4wfZEe6wE63b9ytpBw" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_nHcXwwg6Ee66dZ1LZhmv1g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_nHcXxAg6Ee66dZ1LZhmv1g" name="requisitos" content="requisitos" type="TYPE_VARIABLE" returnType="com.estg.model.Requisito">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_nHcXxQg6Ee66dZ1LZhmv1g" name="requisitos" dataType="_Evot1AfYEe6wE63b9ytpBw" className="com.estg.model.Requisito"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_nHcXxgg6Ee66dZ1LZhmv1g" name="requisitosInput.resultados" content="requisitosInput?.resultados" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_nHcXxwg6Ee66dZ1LZhmv1g" name="requisitosInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_nHcXyAg6Ee66dZ1LZhmv1g" type="JAVA_METHOD" expression="setResultados">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_OGMX5AfZEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_OGMX5QfZEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_OGMX5gfZEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_OGMX6AfZEe6wE63b9ytpBw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_OGMX5wfZEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_AbCaCgfaEe6wE63b9ytpBw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_izyYkAfqEe6wE63b9ytpBw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_pIwIMAg6Ee66dZ1LZhmv1g" name="registarResultadosForm" content="66abc228-9a08-45d9-9291-5029e19b69df" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_AbCaCQfaEe6wE63b9ytpBw"/>
+          <contract xmi:type="process:Contract" xmi:id="_AbCaCQfaEe6wE63b9ytpBw">
+            <inputs xmi:type="process:ContractInput" xmi:id="_nHcXwAg6Ee66dZ1LZhmv1g" name="requisitosInput" type="COMPLEX" dataReference="requisitos" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_nHcXwQg6Ee66dZ1LZhmv1g" name="resultados" createMode="false"/>
+            </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_nHcXwgg6Ee66dZ1LZhmv1g" expression="requisitosInput?.resultados != null" errorMessage="resultados is mandatory for Requisito" name="mandatory_requisitosInput_resultados">
+              <inputNames>requisitosInput</inputNames>
+            </constraints>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_AbCaDAfaEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_BLcjQAfaEe6wE63b9ytpBw" name="Obter revisão e validação pelo cliente" outgoing="_G9306AfaEe6wE63b9ytpBw" incoming="_BLcjTAfaEe6wE63b9ytpBw">
@@ -133,10 +148,12 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_wBZmMAfmEe6wE63b9ytpBw" name="requisitos" dataType="_Evot1AfYEe6wE63b9ytpBw" className="com.estg.model.Requisito">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_wBZmMQfmEe6wE63b9ytpBw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_Ux2ggAg6Ee66dZ1LZhmv1g" name="initRequisitos()" content="def requisitoVar = new com.estg.model.Requisito()&#xD;&#xA;requisitoVar.descricao = requisitosInput?.descricao&#xD;&#xA;return requisitoVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.estg.model.Requisito">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_Ux2ggQg6Ee66dZ1LZhmv1g" name="requisitosInput" type="COMPLEX"/>
+        </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_EvottAfYEe6wE63b9ytpBw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_Qs0MIAfqEe6wE63b9ytpBw" name="levantamentoRevisaoRequisitosForm" content="fdc28822-ab7f-4cb2-b3f4-b554e7c49937" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_s7aaIAg9Ee66dZ1LZhmv1g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_EvottgfYEe6wE63b9ytpBw">
         <targetForm xmi:type="expression:Expression" xmi:id="_EvottwfYEe6wE63b9ytpBw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -151,7 +168,9 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_zHadRAfYEe6wE63b9ytpBw" name="não" target="_zZ-M4AfYEe6wE63b9ytpBw" source="_iZd5QAfYEe6wE63b9ytpBw" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_zHadRQfYEe6wE63b9ytpBw"/>
-        <condition xmi:type="expression:Expression" xmi:id="_zHadRgfYEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_zHadRgfYEe6wE63b9ytpBw" name="newScript()" content="requisitos.problemasDetetados == false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_rpm0AAg9Ee66dZ1LZhmv1g" name="requisitos" dataType="_Evot1AfYEe6wE63b9ytpBw" className="com.estg.model.Requisito"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_ENxhQAfZEe6wE63b9ytpBw" target="_zZ-M4AfYEe6wE63b9ytpBw" source="_AG6kIAfaEe6wE63b9ytpBw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_ENxhQQfZEe6wE63b9ytpBw"/>
@@ -203,11 +222,12 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_mtayAAfpEe6wE63b9ytpBw" name="sim" target="_AG6kIAfaEe6wE63b9ytpBw" source="_iZd5QAfYEe6wE63b9ytpBw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_mtbZEAfpEe6wE63b9ytpBw"/>
-        <condition xmi:type="expression:Expression" xmi:id="_mtbZEQfpEe6wE63b9ytpBw" name="newScript()" content="requisitos.problemasDetetados == true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qa9awAfpEe6wE63b9ytpBw" name="requisitos" dataType="_Evot1AfYEe6wE63b9ytpBw" className="com.estg.model.Requisito"/>
+        <condition xmi:type="expression:Expression" xmi:id="_mtbZEQfpEe6wE63b9ytpBw" name="problemasDetetados()" content="requisitos.problemasDetetados == true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Wpf0EAg5Ee66dZ1LZhmv1g" name="requisitos" dataType="_Evot1AfYEe6wE63b9ytpBw" className="com.estg.model.Requisito"/>
         </condition>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_EvotuwfYEe6wE63b9ytpBw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_EvotuwfYEe6wE63b9ytpBw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor"/>
+      <actors xmi:type="process:Actor" xmi:id="_6kP5QAg7Ee66dZ1LZhmv1g" name="Gestor do projeto" initiator="true"/>
       <configurations xmi:type="configuration:Configuration" xmi:id="_uDkgMAfpEe6wE63b9ytpBw" name="Production" version="7.12.0-004" username="walter.bates">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_uDkgNgfpEe6wE63b9ytpBw">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_uDkgNwfpEe6wE63b9ytpBw" name="Employee actor">
@@ -220,6 +240,14 @@
             </roles>
             <users xmi:type="actormapping:Users" xmi:id="_uDkgOwfpEe6wE63b9ytpBw"/>
           </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_D--HQAg8Ee66dZ1LZhmv1g" name="Gestor do projeto">
+            <groups xmi:type="actormapping:Groups" xmi:id="_D--HQQg8Ee66dZ1LZhmv1g">
+              <group>/acme</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_D--HQgg8Ee66dZ1LZhmv1g"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_D--HQwg8Ee66dZ1LZhmv1g"/>
+            <users xmi:type="actormapping:Users" xmi:id="_D--HRAg8Ee66dZ1LZhmv1g"/>
+          </actorMapping>
         </actorMappings>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_uDkgMQfpEe6wE63b9ytpBw" id="CONNECTOR"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_uDkgMgfpEe6wE63b9ytpBw" id="GROOVY_SCRIPT"/>
@@ -228,8 +256,8 @@
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_uDkgNQfpEe6wE63b9ytpBw" id="GROOVY_SCRIPT"/>
       </configurations>
       <contract xmi:type="process:Contract" xmi:id="_EvotvAfYEe6wE63b9ytpBw">
-        <inputs xmi:type="process:ContractInput" xmi:id="_h2R2MAfkEe6wE63b9ytpBw" name="problemasDetetados" type="BOOLEAN">
-          <mapping xmi:type="process:ContractInputMapping" xmi:id="_h2R2MQfkEe6wE63b9ytpBw"/>
+        <inputs xmi:type="process:ContractInput" xmi:id="_Ux15cAg6Ee66dZ1LZhmv1g" name="requisitosInput" type="COMPLEX" dataReference="requisitos">
+          <inputs xmi:type="process:ContractInput" xmi:id="_Ux15cQg6Ee66dZ1LZhmv1g" name="descricao"/>
         </inputs>
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_EvotvQfYEe6wE63b9ytpBw">

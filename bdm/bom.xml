@@ -13,9 +13,10 @@
         </businessObject>
         <businessObject qualifiedName="com.estg.model.Requisito">
             <fields>
-                <field type="BOOLEAN" length="255" name="problemasDetetados" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="problemasDetetados" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="solucoesPropostas" nullable="true" collection="false"/>
-                <field type="TEXT" length="255" name="resultados" nullable="false" collection="false"/>
+                <field type="TEXT" length="255" name="resultados" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="descricao" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
