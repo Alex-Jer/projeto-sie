@@ -33,6 +33,9 @@
                 <field type="TEXT" length="255" name="solucoesPropostas" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="resultados" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="descricao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipoProjeto" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="determinadoEmProcessoVenda" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="revisaoValidacao" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
