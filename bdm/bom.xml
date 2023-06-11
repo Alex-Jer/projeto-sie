@@ -60,5 +60,13 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.estg.model.Steering">
+            <fields>
+                <field type="BOOLEAN" length="255" name="entregaImediata" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
     </businessObjects>
 </businessObjectModel>
