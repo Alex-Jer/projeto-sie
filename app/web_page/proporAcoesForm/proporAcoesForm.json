@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "3bd48f87-fb66-4e13-aac7-eae0cb982afd",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1686444833332,
+  "lastUpdate" : 1686482542518,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -51,6 +51,10 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
                 }
               },
               "reference" : "7e6733da-012b-43ab-bb8b-0629b5737b65",
@@ -238,6 +242,14 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "requisitos.problemasDetetados"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "b9798075-0084-4b5e-ad25-15fb79596867",
@@ -435,6 +447,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "0b25e9c4-3cae-4bb2-89cf-07d21c9c0614",
@@ -487,6 +520,14 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   }
                 },
                 "reference" : "7d9781b9-87c9-4b40-8063-b90d2d73744f",

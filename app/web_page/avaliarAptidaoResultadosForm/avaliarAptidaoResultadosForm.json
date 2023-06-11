@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "cd602e5e-9633-49d3-8fa1-227889f678d5",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1686443573278,
+  "lastUpdate" : 1686483711466,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -211,19 +211,23 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
                         "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -231,19 +235,14 @@
                           "type" : "interpolation",
                           "value" : "Problemas Detetados"
                         },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
                         "value" : {
                           "type" : "variable",
                           "value" : "requisitos.problemasDetetados"
                         }
                       },
-                      "reference" : "bffa5119-5fe7-45ea-83cd-37b520e593ff",
+                      "reference" : "235eb60a-b61a-4ef1-bbd6-978a38ee262f",
                       "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
+                      "id" : "pbCheckbox"
                     }
                   ],
                   [
