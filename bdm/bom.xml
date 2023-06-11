@@ -9,7 +9,7 @@
             <queries/>
             <indexes/>
         </businessObject>
-        <businessObject qualifiedName="com.estg.model.Idkidk">
+        <businessObject qualifiedName="com.estg.model.KekBAS">
             <fields>
                 <field type="BOOLEAN" length="255" name="ataAceiteTeste2" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="ataAceiteTeste" nullable="true" collection="false"/>
@@ -55,6 +55,15 @@
                 <field type="BOOLEAN" length="255" name="foraAmbitoProjeto" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="clienteContactado" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="validacaoClienteRecebida" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.estg.model.ReuniaoFechoProjeto">
+            <fields>
+                <field type="BOOLEAN" length="255" name="analisarPorFase" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="hasDesvios" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
