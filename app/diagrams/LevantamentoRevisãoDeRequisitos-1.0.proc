@@ -12,6 +12,17 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_EvotqAfYEe6wE63b9ytpBw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_EvotqQfYEe6wE63b9ytpBw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_EvotqgfYEe6wE63b9ytpBw" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_pHNrkghEEe66dZ1LZhmv1g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_pHNrkwhEEe66dZ1LZhmv1g" name="requisitos" content="requisitos" type="TYPE_VARIABLE" returnType="com.estg.model.Requisito">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pHNrlAhEEe66dZ1LZhmv1g" name="requisitos" dataType="_Evot1AfYEe6wE63b9ytpBw" className="com.estg.model.Requisito"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_pHNrlQhEEe66dZ1LZhmv1g" name="requisitosInput.problemasDetetados" content="requisitosInput?.problemasDetetados" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_pHNrlghEEe66dZ1LZhmv1g" name="requisitosInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_pHNrlwhEEe66dZ1LZhmv1g" type="JAVA_METHOD" expression="setProblemasDetetados">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_EvotqwfYEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_EvotrAfYEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_EvotrQfYEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -21,8 +32,8 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_HD4qYAfnEe6wE63b9ytpBw" name="avaliarAptidaoResultadosForm" content="cd602e5e-9633-49d3-8fa1-227889f678d5" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_EvotsgfYEe6wE63b9ytpBw">
-            <inputs xmi:type="process:ContractInput" xmi:id="_DBek4AfnEe6wE63b9ytpBw" name="requisitosInput" type="COMPLEX" dataReference="requisitos" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_DBfL8AfnEe6wE63b9ytpBw" name="problemasDetetados" type="BOOLEAN" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_pHNrkAhEEe66dZ1LZhmv1g" name="requisitosInput" type="COMPLEX" dataReference="requisitos" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_pHNrkQhEEe66dZ1LZhmv1g" name="problemasDetetados" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_EvotswfYEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -153,7 +164,7 @@
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_EvottAfYEe6wE63b9ytpBw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_s7aaIAg9Ee66dZ1LZhmv1g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_SrmPkAhDEe66dZ1LZhmv1g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_EvottgfYEe6wE63b9ytpBw">
         <targetForm xmi:type="expression:Expression" xmi:id="_EvottwfYEe6wE63b9ytpBw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -222,8 +233,8 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_mtayAAfpEe6wE63b9ytpBw" name="sim" target="_AG6kIAfaEe6wE63b9ytpBw" source="_iZd5QAfYEe6wE63b9ytpBw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_mtbZEAfpEe6wE63b9ytpBw"/>
-        <condition xmi:type="expression:Expression" xmi:id="_mtbZEQfpEe6wE63b9ytpBw" name="problemasDetetados()" content="requisitos.problemasDetetados == true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Wpf0EAg5Ee66dZ1LZhmv1g" name="requisitos" dataType="_Evot1AfYEe6wE63b9ytpBw" className="com.estg.model.Requisito"/>
+        <condition xmi:type="expression:Expression" xmi:id="_mtbZEQfpEe6wE63b9ytpBw" name="problemasDetetados()" content="requisitos.problemasDetetados" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_6zZWQAhAEe66dZ1LZhmv1g" name="requisitos" dataType="_Evot1AfYEe6wE63b9ytpBw" className="com.estg.model.Requisito"/>
         </condition>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_EvotuwfYEe6wE63b9ytpBw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor"/>
