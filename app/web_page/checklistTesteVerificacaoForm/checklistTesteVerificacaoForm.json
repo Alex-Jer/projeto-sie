@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "898b351e-cc38-4e7c-a94e-f837a1a20150",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1686575515667,
+  "lastUpdate" : 1686576014364,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -130,47 +130,6 @@
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 4"
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Definicao Requisito"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "a1ae3864-a320-46d6-8466-bb3eb95fd1d8",
-                "hasValidationError" : false,
-                "id" : "pbTitle",
-                "description" : ""
-              }
-            ],
             [
               {
                 "type" : "container",
@@ -713,7 +672,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "Teste E Verificacao"
+                          "value" : "Teste e verificação"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -722,6 +681,10 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "a1f07688-6c4e-4617-aebb-97810bfa0eea",

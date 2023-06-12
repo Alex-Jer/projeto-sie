@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "e0f08fe4-8568-48ac-98d0-10e27bd0fdd8",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1686575505697,
+  "lastUpdate" : 1686575966167,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -132,47 +132,6 @@
           "rows" : [
             [
               {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 4"
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Definicao Requisito"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "8815b2a3-53ad-4685-9434-139f15b8def3",
-                "hasValidationError" : false,
-                "id" : "pbTitle",
-                "description" : ""
-              }
-            ],
-            [
-              {
                 "type" : "container",
                 "dimension" : {
                   "md" : 12,
@@ -274,7 +233,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "Condicoes Iniciais"
+                          "value" : "Condições iniciais e pressupostos"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -283,6 +242,10 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "7b5c5cb4-9396-4445-8335-d706cdcaa1f7",

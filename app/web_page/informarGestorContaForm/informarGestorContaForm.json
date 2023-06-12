@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "ba88d641-1359-4ebb-81be-00afb70d2cf4",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1686575528322,
+  "lastUpdate" : 1686576267770,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -216,6 +216,59 @@
                           "value" : false
                         },
                         "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Gestor de Conta informado?"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "definicaoRequisito.gestorContaInformado"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "f4d37e87-ab38-4b34-ae3d-7482be56c1b4",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
                           "type" : "expression",
                           "value" : "!definicaoRequisito.ambitoRevisto"
                         },
@@ -238,6 +291,14 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "definicaoRequisito.ambitoRevisto"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "1a10a7f8-8227-4ae8-81b7-b51c4d87f93d",
@@ -331,51 +392,6 @@
                         }
                       },
                       "reference" : "0b7fe535-8b91-4fa9-b413-1e667a0161c1",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Gestor Conta Informado"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "definicaoRequisito.gestorContaInformado"
-                        }
-                      },
-                      "reference" : "f4d37e87-ab38-4b34-ae3d-7482be56c1b4",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox",
                       "description" : ""
