@@ -103,5 +103,13 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.estg.model.Testes">
+            <fields>
+                <field type="BOOLEAN" length="255" name="situacoesRep" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
     </businessObjects>
 </businessObjectModel>
