@@ -77,6 +77,15 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.estg.model.ReuniaoAcompanhamento">
+            <fields>
+                <field type="BOOLEAN" length="255" name="revisoes" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="alterarPeriod" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.estg.model.ReuniaoFechoProjeto">
             <fields>
                 <field type="BOOLEAN" length="255" name="analisarPorFase" nullable="false" collection="false"/>
