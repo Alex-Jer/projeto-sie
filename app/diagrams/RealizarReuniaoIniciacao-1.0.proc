@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_Eq9cQAfIEe6vzMw2PyiCFQ" name="RealizarReuniaoKickoff" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_Eq9cQQfIEe6vzMw2PyiCFQ" name="Realizar Reunião de Kickoff">
+  <process:MainProcess xmi:id="_Eq9cQAfIEe6vzMw2PyiCFQ" name="RealizarReuniaoIniciacao" bonitaModelVersion="7.12.0-004">
+    <elements xmi:type="process:Pool" xmi:id="_Eq9cQQfIEe6vzMw2PyiCFQ" name="Realizar Reunião de Iniciação">
       <elements xmi:type="process:Lane" xmi:id="_Eq9cQgfIEe6vzMw2PyiCFQ" name="Gestores de Projeto" actor="_Eq9cWwfIEe6vzMw2PyiCFQ">
         <elements xmi:type="process:StartEvent" xmi:id="_Eq9cQwfIEe6vzMw2PyiCFQ" name="Início da Reunião" outgoing="_Eq9cWAfIEe6vzMw2PyiCFQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Eq9cRAfIEe6vzMw2PyiCFQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Eq9cRQfIEe6vzMw2PyiCFQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Eq9cRgfIEe6vzMw2PyiCFQ" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_Eq9cRwfIEe6vzMw2PyiCFQ" name="Realizar Reunião" outgoing="_wMFSYAfJEe6vzMw2PyiCFQ" incoming="_Eq9cWAfIEe6vzMw2PyiCFQ" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_Eq9cRwfIEe6vzMw2PyiCFQ" name="Analisar informação recebida" outgoing="_wMFSYAfJEe6vzMw2PyiCFQ" incoming="_Eq9cWAfIEe6vzMw2PyiCFQ" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Eq9cSAfIEe6vzMw2PyiCFQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Eq9cSQfIEe6vzMw2PyiCFQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Eq9cSgfIEe6vzMw2PyiCFQ" name="" content="" returnTypeFixed="true"/>
@@ -142,17 +142,17 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_Eq9cewfIEe6vzMw2PyiCFQ" type="7002">
             <children xmi:type="notation:Shape" xmi:id="_Eq9cfAfIEe6vzMw2PyiCFQ" type="3005" element="_Eq9cRwfIEe6vzMw2PyiCFQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_Eq9cfQfIEe6vzMw2PyiCFQ" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Eq9cfgfIEe6vzMw2PyiCFQ" x="230" y="60"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Eq9cfgfIEe6vzMw2PyiCFQ" x="230" y="60" width="162" height="80"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_Eq9cfwfIEe6vzMw2PyiCFQ" type="3002" element="_Eq9cQwfIEe6vzMw2PyiCFQ" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_Eq9cgAfIEe6vzMw2PyiCFQ" type="5024">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_Eq9cgQfIEe6vzMw2PyiCFQ" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Eq9cggfIEe6vzMw2PyiCFQ" x="102" y="63"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Eq9cggfIEe6vzMw2PyiCFQ" x="102" y="75"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_wuhRFAfJEe6vzMw2PyiCFQ" type="3008" element="_wuhREAfJEe6vzMw2PyiCFQ" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_wuhRFgfJEe6vzMw2PyiCFQ" type="5026">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_wuhRFwfJEe6vzMw2PyiCFQ" x="41" y="-78"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_wuhRFwfJEe6vzMw2PyiCFQ" x="91" y="-90"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wuhRFQfJEe6vzMw2PyiCFQ" x="542" y="75" width="43" height="43"/>
             </children>
