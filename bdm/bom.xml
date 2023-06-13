@@ -26,6 +26,14 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.estg.model.ContactarCliente">
+            <fields>
+                <field type="STRING" length="255" name="email" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.estg.model.DefinicaoRequisitos">
             <fields>
                 <field type="BOOLEAN" length="255" name="ambitoRevisto" nullable="true" collection="false"/>
