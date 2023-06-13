@@ -230,6 +230,23 @@
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_jdn39AhnEe67W9WUzSly5A" id="OTHER"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_jdn39QhnEe67W9WUzSly5A" id="GROOVY_SCRIPT"/>
       </configurations>
+      <configurations xmi:type="configuration:Configuration" xmi:id="__IihEAouEe6zhoYIWrdglQ" name="Qualification" version="7.12.0-004" username="walter.bates">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="__IihFgouEe6zhoYIWrdglQ">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="__IihFwouEe6zhoYIWrdglQ" name="Employee actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="__IihGAouEe6zhoYIWrdglQ">
+              <group>/acme</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="__IihGQouEe6zhoYIWrdglQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="__IihGgouEe6zhoYIWrdglQ"/>
+            <users xmi:type="actormapping:Users" xmi:id="__IihGwouEe6zhoYIWrdglQ"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="__IihEQouEe6zhoYIWrdglQ" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="__IihEgouEe6zhoYIWrdglQ" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="__IihEwouEe6zhoYIWrdglQ" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="__IihFAouEe6zhoYIWrdglQ" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="__IihFQouEe6zhoYIWrdglQ" id="GROOVY_SCRIPT"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_Cp6m3AhmEe67W9WUzSly5A"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_Cp6m3QhmEe67W9WUzSly5A">
         <name xmi:type="expression:Expression" xmi:id="_Cp6m3ghmEe67W9WUzSly5A" content="" returnTypeFixed="true"/>
