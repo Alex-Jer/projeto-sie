@@ -35,16 +35,6 @@
             <queries/>
             <indexes/>
         </businessObject>
-        <businessObject qualifiedName="com.estg.model.KekBAS">
-            <fields>
-                <field type="BOOLEAN" length="255" name="ataAceiteTeste2" nullable="true" collection="false"/>
-                <field type="BOOLEAN" length="255" name="ataAceiteTeste" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="aat" nullable="true" collection="false"/>
-            </fields>
-            <uniqueConstraints/>
-            <queries/>
-            <indexes/>
-        </businessObject>
         <businessObject qualifiedName="com.estg.model.MarcarReuniao">
             <fields>
                 <field type="OFFSETDATETIME" length="255" name="dataInicio" nullable="true" collection="false"/>
