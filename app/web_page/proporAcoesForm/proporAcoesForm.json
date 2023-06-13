@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "93c1be8f-c4b5-4484-ab94-32c39cce0c64",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1686494650237,
+  "lastUpdate" : 1686653870634,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -132,47 +132,6 @@
           "rows" : [
             [
               {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 4"
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Requisito"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "581540e6-51a4-46cf-90db-5a447d27d6cb",
-                "hasValidationError" : false,
-                "id" : "pbTitle",
-                "description" : ""
-              }
-            ],
-            [
-              {
                 "type" : "container",
                 "dimension" : {
                   "md" : 12,
@@ -229,7 +188,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Problemas Detetados"
+                          "value" : "Problemas detetados?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -238,6 +197,14 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "requisito.problemasDetetados"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "b60a1556-5fba-40d0-8286-01c32f56290c",
@@ -290,7 +257,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Solucoes Propostas"
+                          "value" : "Soluções propostas"
                         },
                         "labelPosition" : {
                           "type" : "constant",

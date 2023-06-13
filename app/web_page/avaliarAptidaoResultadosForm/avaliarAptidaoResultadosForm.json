@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "96b1e2dd-08f5-4588-857c-395e57ff5607",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1686494418274,
+  "lastUpdate" : 1686653812376,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -132,47 +132,6 @@
           "rows" : [
             [
               {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 4"
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Requisito"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "f2838d39-8e3b-4e34-bc7d-fa1fb52d6819",
-                "hasValidationError" : false,
-                "id" : "pbTitle",
-                "description" : ""
-              }
-            ],
-            [
-              {
                 "type" : "container",
                 "dimension" : {
                   "md" : 12,
@@ -229,7 +188,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Problemas Detetados"
+                          "value" : "Problemas detetados?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -238,6 +197,14 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "requisito.problemasDetetados"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "33b3db00-2aa1-4364-9131-02a1a7ff2f86",
