@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "35741fe4-00ec-4f00-8243-f8c4391cb8f9",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1686575929180,
+  "lastUpdate" : 1686653203889,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -179,48 +179,17 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
                         "readOnly" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Componentes a melhorar:"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "definicaoRequisito.componentesAMelhorar"
                         },
                         "required" : {
                           "type" : "constant",
@@ -238,25 +207,30 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "debounce" : {
+                        "labelHidden" : {
                           "type" : "constant",
-                          "value" : 0
+                          "value" : false
                         },
-                        "min" : {
-                          "type" : "constant"
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Componentes a melhorar:"
                         },
-                        "max" : {
-                          "type" : "constant"
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
                         },
-                        "step" : {
+                        "labelWidth" : {
                           "type" : "constant",
                           "value" : 1
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "definicaoRequisito.componentesAMelhorar"
                         }
                       },
-                      "reference" : "d1e3ee0e-32b0-461e-8176-916e0f68b14a",
+                      "reference" : "070ab973-7032-4c63-a42b-ebf500ce605a",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
+                      "id" : "pbTextarea"
                     }
                   ],
                   [
@@ -271,7 +245,7 @@
                       "propertyValues" : {
                         "hidden" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "level" : {
                           "type" : "constant",
@@ -292,6 +266,10 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "879f4ca3-6f37-4610-9a61-cd6a65ceacae",
@@ -395,7 +373,7 @@
                       "propertyValues" : {
                         "hidden" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "level" : {
                           "type" : "constant",
@@ -416,6 +394,10 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "060ece85-4870-4b75-beba-95d38b720a2a",
