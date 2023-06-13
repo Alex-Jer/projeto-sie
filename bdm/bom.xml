@@ -45,6 +45,15 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.estg.model.MarcarReuniao">
+            <fields>
+                <field type="OFFSETDATETIME" length="255" name="dataInicio" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="dataFim" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.estg.model.Paremetrizacao">
             <fields>
                 <field type="BOOLEAN" length="255" name="saidasOK" nullable="false" collection="false"/>
