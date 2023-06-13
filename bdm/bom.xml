@@ -10,6 +10,14 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.estg.model.Arranque">
+            <fields>
+                <field type="STRING" length="255" name="reuniaoKickOff" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.estg.model.Ata">
             <fields>
                 <field type="BOOLEAN" length="255" name="ataAceite" nullable="true" collection="false"/>
