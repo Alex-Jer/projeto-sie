@@ -877,7 +877,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_DEuKwwnXEe65vrT_k-xexg" type="3008" element="_DEtjsAnXEe65vrT_k-xexg" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_DEuKxQnXEe65vrT_k-xexg" type="5026">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_DEuKxgnXEe65vrT_k-xexg" y="5"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_DEuKxgnXEe65vrT_k-xexg" x="11" y="5"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DEuKxAnXEe65vrT_k-xexg" x="2587" y="57" width="43" height="43"/>
             </children>
