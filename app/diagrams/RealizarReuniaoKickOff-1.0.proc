@@ -131,15 +131,30 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_H0GOsgn9Ee6PPJY56xf3GQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_H0GOsQn9Ee6PPJY56xf3GQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_H0GOswn9Ee6PPJY56xf3GQ" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_kbYiwgn-Ee6PPJY56xf3GQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_kbYiwwn-Ee6PPJY56xf3GQ" name="reuniao" content="reuniao" type="TYPE_VARIABLE" returnType="com.estg.model.ReuniaoKickoff">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_kbYixAn-Ee6PPJY56xf3GQ" name="reuniao" dataType="_jX24JAn4Ee6PPJY56xf3GQ" className="com.estg.model.ReuniaoKickoff"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_kbYixQn-Ee6PPJY56xf3GQ" name="reuniaoInput.periodicidadeReunioesAcompanhamento" content="reuniaoInput?.periodicidadeReunioesAcompanhamento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_kbYixgn-Ee6PPJY56xf3GQ" name="reuniaoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_kbYixwn-Ee6PPJY56xf3GQ" type="JAVA_METHOD" expression="setPeriodicidadeReunioesAcompanhamento">
+              <inputTypes>java.lang.Integer</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_H0GOtAn9Ee6PPJY56xf3GQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_H0GOtQn9Ee6PPJY56xf3GQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_H0GOtgn9Ee6PPJY56xf3GQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_H0GOuAn9Ee6PPJY56xf3GQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_H0GOtwn9Ee6PPJY56xf3GQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_yDaUKgn9Ee6PPJY56xf3GQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_yDaUKwn9Ee6PPJY56xf3GQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_lUriQAn-Ee6PPJY56xf3GQ" name="periodicidadeReunioesAcompanhamentoForm" content="76ae06c1-4c25-429e-8a04-a13281a820b7" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_yDaUKQn9Ee6PPJY56xf3GQ"/>
+          <contract xmi:type="process:Contract" xmi:id="_yDaUKQn9Ee6PPJY56xf3GQ">
+            <inputs xmi:type="process:ContractInput" xmi:id="_kbYiwAn-Ee6PPJY56xf3GQ" name="reuniaoInput" type="COMPLEX" dataReference="reuniao" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_kbYiwQn-Ee6PPJY56xf3GQ" name="periodicidadeReunioesAcompanhamento" type="INTEGER" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_yDaULAn9Ee6PPJY56xf3GQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:CallActivity" xmi:id="_GX2dsAn-Ee6PPJY56xf3GQ" name="Formalizar Ata" outgoing="_JQNx9An-Ee6PPJY56xf3GQ" incoming="_9teukAn9Ee6PPJY56xf3GQ">

@@ -117,6 +117,7 @@
                 <field type="BOOLEAN" length="255" name="projetoTipoUpgrade" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="fazerReunioesAcompanhamento" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="necessariaPresencaEquipa" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="periodicidadeReunioesAcompanhamento" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
