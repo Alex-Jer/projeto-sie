@@ -113,7 +113,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_mpo7UAoEEe6Fupow4S9xaQ" type="3003" element="_mpntMAoEEe6Fupow4S9xaQ" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_mpo7UgoEEe6Fupow4S9xaQ" type="5025">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_mpo7UwoEEe6Fupow4S9xaQ" x="-82" y="11"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_mpo7UwoEEe6Fupow4S9xaQ" x="16" y="22"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mpo7UQoEEe6Fupow4S9xaQ" x="743" y="120"/>
             </children>
