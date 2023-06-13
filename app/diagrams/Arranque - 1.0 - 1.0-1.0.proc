@@ -153,7 +153,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_isIPAQonEe6zhoYIWrdglQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_isIPAgonEe6zhoYIWrdglQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_0-C1EAoEEe6Fupow4S9xaQ" name="Gestor de projeto + Gestor de equipa"/>
+      <actors xmi:type="process:Actor" xmi:id="_0-C1EAoEEe6Fupow4S9xaQ" name="Gestor de projeto + Gestor de equipa" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_3zuBsAoEEe6Fupow4S9xaQ" name="Gestor de projeto"/>
       <contract xmi:type="process:Contract" xmi:id="_kbUCoAoEEe6Fupow4S9xaQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_kbTbgAoEEe6Fupow4S9xaQ">
