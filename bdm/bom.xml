@@ -112,6 +112,16 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.estg.model.ReuniaoKickoff">
+            <fields>
+                <field type="BOOLEAN" length="255" name="projetoTipoUpgrade" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="fazerReunioesAcompanhamento" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="necessariaPresencaEquipa" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.estg.model.Steering">
             <fields>
                 <field type="BOOLEAN" length="255" name="entregaImediata" nullable="true" collection="false"/>
