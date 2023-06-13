@@ -167,7 +167,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_rCBetwiBEe63687R2kHzSQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_rCBetgiBEe63687R2kHzSQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <BoundaryIntermediateEvents xmi:type="process:NonInterruptingBoundaryTimerEvent" xmi:id="_ueb7MAiBEe63687R2kHzSQ" name="5 dias úteis" outgoing="_8MownAiBEe63687R2kHzSQ">
-            <condition xmi:type="expression:Expression" xmi:id="_yab2sAiBEe63687R2kHzSQ" name="00:00:01" content="1000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
+            <condition xmi:type="expression:Expression" xmi:id="_yab2sAiBEe63687R2kHzSQ" name="7 Days 00:00:00" content="604800000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_rncf-giBEe63687R2kHzSQ">
             <targetForm xmi:type="expression:Expression" xmi:id="_RaTdsAouEe6cK8CuenG4EQ" name="avaliacaoSatisfacaoForm" content="43632a90-190c-4095-bc2a-e1cc5a6f3541" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
