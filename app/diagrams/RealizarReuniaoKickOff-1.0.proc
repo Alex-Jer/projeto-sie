@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_jX238An4Ee6PPJY56xf3GQ" name="RealizarReuniaoKickOff" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_jX238Qn4Ee6PPJY56xf3GQ" name="Realizar reunião de kick-off">
       <elements xmi:type="process:Lane" xmi:id="_jX238gn4Ee6PPJY56xf3GQ" name="Gestores de Projeto (Empresa e Cliente)" actor="_jX24Cwn4Ee6PPJY56xf3GQ">
@@ -254,6 +254,40 @@
         <condition xmi:type="expression:Expression" xmi:id="_JQNx9gn-Ee6PPJY56xf3GQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_jX24Cwn4Ee6PPJY56xf3GQ" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_AI7R8AotEe6zhoYIWrdglQ" name="Production" version="7.12.0-004" username="walter.bates">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_AI7R9gotEe6zhoYIWrdglQ">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_AI7R9wotEe6zhoYIWrdglQ" name="Employee actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="_AI7R-AotEe6zhoYIWrdglQ">
+              <group>/acme</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_AI7R-QotEe6zhoYIWrdglQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_AI7R-gotEe6zhoYIWrdglQ"/>
+            <users xmi:type="actormapping:Users" xmi:id="_AI7R-wotEe6zhoYIWrdglQ"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_AI7R8QotEe6zhoYIWrdglQ" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_AI7R8gotEe6zhoYIWrdglQ" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_AI7R8wotEe6zhoYIWrdglQ" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_AI7R9AotEe6zhoYIWrdglQ" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_AI7R9QotEe6zhoYIWrdglQ" id="GROOVY_SCRIPT"/>
+      </configurations>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_B0NvEAotEe6zhoYIWrdglQ" name="Qualification" version="7.12.0-004" username="walter.bates">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_B0NvFgotEe6zhoYIWrdglQ">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_B0NvFwotEe6zhoYIWrdglQ" name="Employee actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="_B0NvGAotEe6zhoYIWrdglQ">
+              <group>/acme</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_B0NvGQotEe6zhoYIWrdglQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_B0NvGgotEe6zhoYIWrdglQ"/>
+            <users xmi:type="actormapping:Users" xmi:id="_B0NvGwotEe6zhoYIWrdglQ"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_B0NvEQotEe6zhoYIWrdglQ" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_B0NvEgotEe6zhoYIWrdglQ" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_B0NvEwotEe6zhoYIWrdglQ" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_B0NvFAotEe6zhoYIWrdglQ" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_B0NvFQotEe6zhoYIWrdglQ" id="GROOVY_SCRIPT"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_jX24DAn4Ee6PPJY56xf3GQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_jX24DQn4Ee6PPJY56xf3GQ">
         <name xmi:type="expression:Expression" xmi:id="_jX24Dgn4Ee6PPJY56xf3GQ" content="" returnTypeFixed="true"/>
