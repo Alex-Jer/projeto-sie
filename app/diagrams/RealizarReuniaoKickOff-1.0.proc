@@ -154,6 +154,9 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_kbYiwAn-Ee6PPJY56xf3GQ" name="reuniaoInput" type="COMPLEX" dataReference="reuniao" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_kbYiwQn-Ee6PPJY56xf3GQ" name="periodicidadeReunioesAcompanhamento" type="INTEGER" createMode="false"/>
             </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_kcApUAoIEe6PPJY56xf3GQ" expression="return reuniaoInput.periodicidadeReunioesAcompanhamento>=0;" errorMessage="A periodicidade das reuniões não pode ser negativa" name="periodicidadeNegativa">
+              <inputNames>reuniaoInput</inputNames>
+            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_yDaULAn9Ee6PPJY56xf3GQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
