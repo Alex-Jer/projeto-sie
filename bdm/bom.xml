@@ -43,6 +43,22 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.estg.model.FechoProjeto">
+            <fields>
+                <field type="STRING" length="255" name="tipoProjetoABC" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="necessidadeReuniao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipoProjeto" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="documentacaoFormalizada" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="validacaoClienteObtida" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="aspetosAbertos" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="projetoDeveSerEncerrado" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="atividadesRealizadas" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="atividadesCompletas" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.estg.model.MarcarReuniao">
             <fields>
                 <field type="OFFSETDATETIME" length="255" name="dataInicio" nullable="true" collection="false"/>
