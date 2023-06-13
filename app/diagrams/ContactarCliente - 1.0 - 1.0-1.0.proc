@@ -18,7 +18,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_mpGv2AoEEe6Fupow4S9xaQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_mpGv1woEEe6Fupow4S9xaQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_mpGv2goEEe6Fupow4S9xaQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_lWdfkAotEe6zhoYIWrdglQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_vmO3gAozEe6dL5AWDYzIFA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_mpGv2QoEEe6Fupow4S9xaQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_mpGv3AoEEe6Fupow4S9xaQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -139,7 +139,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_CqQYgQooEe6zhoYIWrdglQ" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_motuUAoEEe6Fupow4S9xaQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_lWdfkQotEe6zhoYIWrdglQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_vmO3gQozEe6dL5AWDYzIFA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_mouVUAoEEe6Fupow4S9xaQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_mouVUQoEEe6Fupow4S9xaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -189,7 +189,14 @@
             <users xmi:type="actormapping:Users" xmi:id="_Y_Qc5QouEe6zhoYIWrdglQ"/>
           </actorMapping>
         </actorMappings>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_Y_P10QouEe6zhoYIWrdglQ" id="CONNECTOR"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_vT9bwAozEe6dL5AWDYzIFA" type="CONNECTOR" definitionId="email" definitionVersion="1.2.0" implementationId="email-impl" implementationVersion="1.3.0"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_Y_P10QouEe6zhoYIWrdglQ" id="CONNECTOR">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_vUXrcAozEe6dL5AWDYzIFA" id="email-impl-1.3.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_vUeZIAozEe6dL5AWDYzIFA" key="email-impl -- 1.3.0" value="bonita-connector-email-1.3.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_vUg1YAozEe6dL5AWDYzIFA" key="email-impl -- 1.3.0" value="javax.mail-1.6.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_vUiqkAozEe6dL5AWDYzIFA" key="email-impl -- 1.3.0" value="javax.mail-api-1.6.2.jar" type="CONNECTOR"/>
+          </children>
+        </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_Y_P10gouEe6zhoYIWrdglQ" id="GROOVY_SCRIPT"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_Y_P10wouEe6zhoYIWrdglQ" id="ACTOR_FILTER"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_Y_P11AouEe6zhoYIWrdglQ" id="OTHER"/>
