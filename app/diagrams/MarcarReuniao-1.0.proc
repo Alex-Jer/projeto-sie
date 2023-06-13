@@ -13,15 +13,48 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_o6_-iAfWEe6wE63b9ytpBw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_o6_-iQfWEe6wE63b9ytpBw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_o6_-igfWEe6wE63b9ytpBw" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_5RntoAoFEe6PPJY56xf3GQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_5RntoQoFEe6PPJY56xf3GQ" name="reuniao" content="reuniao" type="TYPE_VARIABLE" returnType="com.estg.model.MarcarReuniao">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_5RntogoFEe6PPJY56xf3GQ" name="reuniao" dataType="_o6_-tAfWEe6wE63b9ytpBw" className="com.estg.model.MarcarReuniao"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_5RntowoFEe6PPJY56xf3GQ" name="reuniaoInput.dataInicio" content="reuniaoInput?.dataInicio" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.OffsetDateTime">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_5RntpAoFEe6PPJY56xf3GQ" name="reuniaoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_5RntpQoFEe6PPJY56xf3GQ" type="JAVA_METHOD" expression="setDataInicio">
+              <inputTypes>java.time.OffsetDateTime</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_5RntpgoFEe6PPJY56xf3GQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_5RntpwoFEe6PPJY56xf3GQ" name="reuniao" content="reuniao" type="TYPE_VARIABLE" returnType="com.estg.model.MarcarReuniao">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_5RntqAoFEe6PPJY56xf3GQ" name="reuniao" dataType="_o6_-tAfWEe6wE63b9ytpBw" className="com.estg.model.MarcarReuniao"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_5RntqQoFEe6PPJY56xf3GQ" name="reuniaoInput.dataFim" content="reuniaoInput?.dataFim" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.OffsetDateTime">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_5RntqgoFEe6PPJY56xf3GQ" name="reuniaoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_5RntqwoFEe6PPJY56xf3GQ" type="JAVA_METHOD" expression="setDataFim">
+              <inputTypes>java.time.OffsetDateTime</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_o6_-iwfWEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_o6_-jAfWEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_o6_-jQfWEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_o6_-jgfWEe6wE63b9ytpBw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_o6_-jwfWEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_o6_-kAfWEe6wE63b9ytpBw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_o6_-kQfWEe6wE63b9ytpBw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_6DIqIAoFEe6PPJY56xf3GQ" name="marcarReuniaoDataHoraForm" content="a5cb1b5a-21bd-4d6f-967c-3690f350e04e" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_o6_-kgfWEe6wE63b9ytpBw"/>
+          <contract xmi:type="process:Contract" xmi:id="_o6_-kgfWEe6wE63b9ytpBw">
+            <inputs xmi:type="process:ContractInput" xmi:id="_5RnGkAoFEe6PPJY56xf3GQ" name="reuniaoInput" type="COMPLEX" dataReference="reuniao" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_5RnGkQoFEe6PPJY56xf3GQ" name="dataInicio" type="OFFSETDATETIME" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_5RnGkgoFEe6PPJY56xf3GQ" name="dataFim" type="OFFSETDATETIME" createMode="false"/>
+            </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_w7_C8AoGEe6PPJY56xf3GQ" expression="return reuniaoInput.dataInicio.toEpochSecond()&lt;reuniaoInput.dataFim.toEpochSecond();" errorMessage="A data e hora de fim tem que ser depois da data e hora de início" name="startDateBeforeEndDate">
+              <inputNames>reuniaoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_6XO1YAoGEe6PPJY56xf3GQ" expression="return reuniaoInput.dataFim.toEpochSecond()-reuniaoInput.dataInicio.toEpochSecond()&lt;=60*60*2;" errorMessage="A duração da reunião não pode exceder 2 horas" name="durationNotMoreThan2Hours">
+              <inputNames>reuniaoInput</inputNames>
+            </constraints>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_o6_-kwfWEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:TextAnnotation" xmi:id="_bjnRMAfXEe6wE63b9ytpBw" text="duração máxima. 2 horas"/>
@@ -35,7 +68,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_duyISAfXEe6wE63b9ytpBw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_duyIRwfXEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_gbpXKgfXEe6wE63b9ytpBw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_gbpXKwfXEe6wE63b9ytpBw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_BVXPsAoIEe6PPJY56xf3GQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_gbpXKQfXEe6wE63b9ytpBw"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_gbpXLAfXEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -72,7 +105,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_lCW_AQoFEe6PPJY56xf3GQ" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_o6_-lAfWEe6wE63b9ytpBw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_o6_-lQfWEe6wE63b9ytpBw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_BVXPsQoIEe6PPJY56xf3GQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_o6_-lgfWEe6wE63b9ytpBw">
         <targetForm xmi:type="expression:Expression" xmi:id="_o6_-lwfWEe6wE63b9ytpBw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
