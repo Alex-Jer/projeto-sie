@@ -97,8 +97,8 @@
         </businessObject>
         <businessObject qualifiedName="com.estg.model.ReuniaoFechoProjeto">
             <fields>
-                <field type="BOOLEAN" length="255" name="analisarPorFase" nullable="false" collection="false"/>
-                <field type="BOOLEAN" length="255" name="hasDesvios" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="analisarPorFase" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="hasDesvios" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
