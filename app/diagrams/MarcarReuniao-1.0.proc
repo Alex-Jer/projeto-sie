@@ -62,15 +62,30 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_duyIQgfXEe6wE63b9ytpBw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_duyIQQfXEe6wE63b9ytpBw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_duyIQwfXEe6wE63b9ytpBw" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_GtNBogoJEe6PPJY56xf3GQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_GtNBowoJEe6PPJY56xf3GQ" name="reuniao" content="reuniao" type="TYPE_VARIABLE" returnType="com.estg.model.MarcarReuniao">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_GtNBpAoJEe6PPJY56xf3GQ" name="reuniao" dataType="_o6_-tAfWEe6wE63b9ytpBw" className="com.estg.model.MarcarReuniao"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_GtNBpQoJEe6PPJY56xf3GQ" name="reuniaoInput.sala" content="reuniaoInput?.sala" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_GtNBpgoJEe6PPJY56xf3GQ" name="reuniaoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_GtNBpwoJEe6PPJY56xf3GQ" type="JAVA_METHOD" expression="setSala">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_duyIRAfXEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_duyIRQfXEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_duyIRgfXEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_duyISAfXEe6wE63b9ytpBw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_duyIRwfXEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_gbpXKgfXEe6wE63b9ytpBw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_BVXPsAoIEe6PPJY56xf3GQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_HjE5sAoJEe6PPJY56xf3GQ" name="reservarSalaMarcarReuniaoForm" content="059d876c-a63b-46b6-bd90-8868fe01599c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_gbpXKQfXEe6wE63b9ytpBw"/>
+          <contract xmi:type="process:Contract" xmi:id="_gbpXKQfXEe6wE63b9ytpBw">
+            <inputs xmi:type="process:ContractInput" xmi:id="_GtNBoAoJEe6PPJY56xf3GQ" name="reuniaoInput" type="COMPLEX" dataReference="reuniao" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_GtNBoQoJEe6PPJY56xf3GQ" name="sala" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_gbpXLAfXEe6wE63b9ytpBw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_iQZSQAfXEe6wE63b9ytpBw" name="Divulgação prévia da agenda" outgoing="_jsSoiwfXEe6wE63b9ytpBw" incoming="_iQZ5UAfXEe6wE63b9ytpBw">
@@ -105,7 +120,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_lCW_AQoFEe6PPJY56xf3GQ" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_o6_-lAfWEe6wE63b9ytpBw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_BVXPsQoIEe6PPJY56xf3GQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_VXQ3wQoIEe6PPJY56xf3GQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_o6_-lgfWEe6wE63b9ytpBw">
         <targetForm xmi:type="expression:Expression" xmi:id="_o6_-lwfWEe6wE63b9ytpBw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
