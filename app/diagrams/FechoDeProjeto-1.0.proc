@@ -328,6 +328,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_ZQRuggn5Ee6tX-7CHFY2xQ" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_5E4UUAoUEe67ybv37Ys8Ww" name="Obter o prazo de validação estipulado no documento" outgoing="_y6hD0AoUEe67ybv37Ys8Ww" incoming="_yeIp0AoUEe67ybv37Ys8Ww" overrideActorsOfTheLane="false">
+          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_kbIS4Q4WEe6jaKvS1xelSw" source="_kbHEwA4WEe6jaKvS1xelSw"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_yeHbsQoUEe67ybv37Ys8Ww" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_yeHbsAoUEe67ybv37Ys8Ww" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_yeHbsgoUEe67ybv37Ys8Ww" name="" content="" returnTypeFixed="true"/>
@@ -360,6 +361,7 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_5E47ZwoUEe67ybv37Ys8Ww" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_kbHEwA4WEe6jaKvS1xelSw" text="constraint minPrazo"/>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_n3LGQAnUEe65vrT_k-xexg" name="Gestor de Conta ou Gestor da equipa" actor="_jAaLuwnUEe65vrT_k-xexg">
         <elements xmi:type="process:Task" xmi:id="_-vOKIAnWEe65vrT_k-xexg" name="Decidir se o projeto deve ser ou não encerrado" outgoing="_A91WwAnXEe65vrT_k-xexg" incoming="_mtNboAojEe6cK8CuenG4EQ" overrideActorsOfTheLane="false">
@@ -849,6 +851,13 @@
               <children xmi:type="notation:DecorationNode" xmi:id="_5E47agoUEe67ybv37Ys8Ww" type="5005"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5E47aQoUEe67ybv37Ys8Ww" x="1655" y="269" width="188" height="93"/>
             </children>
+            <children xmi:type="notation:Node" xmi:id="_kbHr0A4WEe6jaKvS1xelSw" type="3015" element="_kbHEwA4WEe6jaKvS1xelSw">
+              <children xmi:type="notation:DecorationNode" xmi:id="_kbIS4A4WEe6jaKvS1xelSw" type="5010"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_kbHr0Q4WEe6jaKvS1xelSw"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_kbHr0g4WEe6jaKvS1xelSw" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_kbHr0w4WEe6jaKvS1xelSw"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kbHr1A4WEe6jaKvS1xelSw" x="1790" y="179"/>
+            </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_ntwEgQnUEe65vrT_k-xexg"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_ntwrkAnUEe65vrT_k-xexg" fontName="Segoe UI"/>
@@ -1208,6 +1217,10 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_8UP1gQojEe6cK8CuenG4EQ" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8UP1ggojEe6cK8CuenG4EQ" points="[0, -5, -135, 0]$[54, -5, -81, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8URDoAojEe6cK8CuenG4EQ" id="(1.0,0.52)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_kbI58A4WEe6jaKvS1xelSw" type="4003" element="_kbIS4Q4WEe6jaKvS1xelSw" source="_kbHr0A4WEe6jaKvS1xelSw" target="_5E47aAoUEe67ybv37Ys8Ww">
+      <styles xmi:type="notation:FontStyle" xmi:id="_kbI58Q4WEe6jaKvS1xelSw" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kbI58g4WEe6jaKvS1xelSw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>

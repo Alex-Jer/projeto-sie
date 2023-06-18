@@ -128,6 +128,7 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_lUM2lgn9Ee6PPJY56xf3GQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_yDaUIAn9Ee6PPJY56xf3GQ" name="Definir periodicidade das reuniões" outgoing="_RNMFAAn9Ee6PPJY56xf3GQ" incoming="_H0GOvAn9Ee6PPJY56xf3GQ" overrideActorsOfTheLane="false">
+          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_pjkzYQ4WEe6jaKvS1xelSw" source="_pjjlQA4WEe6jaKvS1xelSw"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_H0GOsgn9Ee6PPJY56xf3GQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_H0GOsQn9Ee6PPJY56xf3GQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_H0GOswn9Ee6PPJY56xf3GQ" name="" content="" returnTypeFixed="true"/>
@@ -177,6 +178,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_JQNK4Qn-Ee6PPJY56xf3GQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_JQNK4wn-Ee6PPJY56xf3GQ" name="" content="" returnTypeFixed="true"/>
         </elements>
+        <elements xmi:type="process:TextAnnotation" xmi:id="_pjjlQA4WEe6jaKvS1xelSw" text="constraint: periodicidade negativa"/>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_AkTHgAn6Ee6PPJY56xf3GQ" name="reuniao" dataType="_jX24JAn4Ee6PPJY56xf3GQ" className="com.estg.model.ReuniaoKickoff">
         <defaultValue xmi:type="expression:Expression" xmi:id="_AkTHgQn6Ee6PPJY56xf3GQ" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
@@ -393,6 +395,13 @@
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JQNx8Qn-Ee6PPJY56xf3GQ" x="1449" y="41"/>
             </children>
+            <children xmi:type="notation:Node" xmi:id="_pjkMUA4WEe6jaKvS1xelSw" type="3015" element="_pjjlQA4WEe6jaKvS1xelSw">
+              <children xmi:type="notation:DecorationNode" xmi:id="_pjkzYA4WEe6jaKvS1xelSw" type="5010"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_pjkMUQ4WEe6jaKvS1xelSw"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_pjkMUg4WEe6jaKvS1xelSw" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_pjkMUw4WEe6jaKvS1xelSw"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pjkMVA4WEe6jaKvS1xelSw" x="1092" y="189" width="171" height="62"/>
+            </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_jX24Mwn4Ee6PPJY56xf3GQ"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_jX24NAn4Ee6PPJY56xf3GQ" fontName="Segoe UI"/>
@@ -519,6 +528,10 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_JQNx-An-Ee6PPJY56xf3GQ" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JQNx-Qn-Ee6PPJY56xf3GQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_pjlacA4WEe6jaKvS1xelSw" type="4003" element="_pjkzYQ4WEe6jaKvS1xelSw" source="_pjkMUA4WEe6jaKvS1xelSw" target="_yDa7MAn9Ee6PPJY56xf3GQ">
+      <styles xmi:type="notation:FontStyle" xmi:id="_pjlacQ4WEe6jaKvS1xelSw" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pjlacg4WEe6jaKvS1xelSw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>
