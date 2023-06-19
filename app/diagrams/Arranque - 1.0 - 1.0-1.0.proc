@@ -28,7 +28,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_Fl6cwA4XEe6jaKvS1xelSw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_Fl51tg4XEe6jaKvS1xelSw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_Fl6cwg4XEe6jaKvS1xelSw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_lWIGEA4XEe6jaKvS1xelSw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_WtGqYA4bEe6jaKvS1xelSw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_Fl6cwQ4XEe6jaKvS1xelSw"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Fl6cxA4XEe6jaKvS1xelSw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -106,7 +106,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_kbm9gQoEEe6Fupow4S9xaQ" name="" content="" type="GROOVY" returnType=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_kbUCnAoEEe6Fupow4S9xaQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_kbUCnQoEEe6Fupow4S9xaQ" name="identificacaoRecursosForm" content="4a1d5c33-6b3a-4ca8-86bf-732a0f466875" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_WtGqYQ4bEe6jaKvS1xelSw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_kbUCngoEEe6Fupow4S9xaQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_kbUCnwoEEe6Fupow4S9xaQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
